@@ -1,0 +1,8 @@
+{
+  "name": "energy",
+  "private": true,
+  "dependencies": {
+    "chart.js":
+  }
+}
+
