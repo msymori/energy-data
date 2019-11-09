@@ -31,6 +31,19 @@
             </table>
         </div>
         
+        <div class="chart-wrapper">
+            <p class="dataset-title">Energy Datas</p>
+            <div class="chart">
+                <%= high_chart("my_chart1",  @chart2011) %>
+            </div>
+            <div class="chart">
+                <%= high_chart("my_chart2",  @chart2012) %>
+            </div>
+            <div class="chart">
+                <%= high_chart("my_chart3",  @chart2013) %>
+            </div>
+        </div>
+        
         <div class="datas">
             <p class="dataset-title"><%= @house.lastname %> datas</p>
             <table>

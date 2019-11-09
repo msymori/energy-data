@@ -38,4 +38,25 @@ window.draw_graph = ->
                 }]
             }
         }
-    })
+    });
+
+    ctx1 = document.getElementById("Chartdemo").getContext('2d')
+    myChart = new Chart(ctx1, {
+        type: 'line',
+        data: {
+            datasets: [
+                {
+                    label: 'London',
+                    data: gon.data2011,
+                    backgroundColor: 'rgba(255,99,132,1)'
+                },
+                {
+                    label: 'Oxford',
+                    data: gon.data2011,
+                    backgroundColor: 'rgba(54, 162, 235, 1)'
+                }
+            ],
+        }
+    });
+    
+    
