@@ -20,12 +20,12 @@ class DatasController < ApplicationController
         @daylight_2012 = get_daylight(@datas, 2012)
         @energy_production_2013 = get_energy_production(@datas, 2013)
         @daylight_2013 = get_daylight(@datas, 2013)
-        months6 = [7, 8, 9, 10, 11, 12]
-        months12 = [1,2,3,4,5,6,7,8,9,10,11,12]
-        
-        @chart2011 = get_chart_graph("Energy 2011", months6, @energy_production_2011, @daylight_2011)
-        @chart2012 = get_chart_graph("Energy 2012", months12, @energy_production_2012, @daylight_2012)
-        @chart2013 = get_chart_graph("Energy 2013", months6, @energy_production_2013, @daylight_2013)
+        months2011 = [7, 8, 9, 10, 11, 12]
+        months2012 = [1,2,3,4,5,6,7,8,9,10,11,12]
+        months2013 = [1,2,3,4,5,6]
+        @chart2011 = get_chart_graph("Energy 2011", months2011, @energy_production_2011, @daylight_2011)
+        @chart2012 = get_chart_graph("Energy 2012", months2012, @energy_production_2012, @daylight_2012)
+        @chart2013 = get_chart_graph("Energy 2013", months2013, @energy_production_2013, @daylight_2013)
     end
     
     
