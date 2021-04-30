@@ -36,7 +36,7 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'chart-js-rails', '~> 0.1.4'
-gem 'gon', '~> 6.2.0'
+gem 'gon', '~> 6.4.0'
 gem'lazy_high_charts'
 
 group :development, :test do
